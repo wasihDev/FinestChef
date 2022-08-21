@@ -162,7 +162,7 @@ class _HomeScreen2State extends State<HomeScreen2>
                             shrinkWrap: true,
                             crossAxisCount: 2,
                             crossAxisSpacing: 10,
-                            mainAxisSpacing: 90,
+                            mainAxisSpacing: 120,
                             children: List.generate(
                               6,
                               (index) => GestureDetector(

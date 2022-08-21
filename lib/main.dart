@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import 'package:food_app/screens/bottomNagivation_screens/home_screen/homeScreen.dart';
 import 'package:food_app/screens/bottomNagivation_screens/upload_screen/upload_screen2.dart';
+import 'package:food_app/screens/splash/splash.dart';
 import 'package:food_app/screens/startUp_screens/password_recovery_screen/check_your_email.dart';
 import 'package:food_app/screens/startUp_screens/password_recovery_screen/reset_password.dart';
 import 'package:food_app/screens/startUp_screens/signUp_screen/check_your_email.dart';
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        title: 'Flutter Demo',
         theme: ThemeData(
           appBarTheme: AppBarTheme(
               foregroundColor: Colors.blueGrey[800],
@@ -30,8 +33,9 @@ class MyApp extends StatelessWidget {
               color: Colors.transparent),
           primarySwatch: Colors.green,
         ),
-        initialRoute: '/OnBoardingScreen',
+        initialRoute: '/Splash',
         routes: {
+          '/Splash': (context) => const Splash(),
           '/OnBoardingScreen': (context) => const OnBoardingScreen(),
           '/LoginScreen': (context) => const LoginScreen(),
           '/ForgetPassword': (context) => const ForgetPassword(),
